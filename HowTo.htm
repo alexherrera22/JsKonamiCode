@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js.onKonamiCode.js"></script>
+    <title>Jquery Konami Code Plugin</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").onKonamiCode(function () {
+                $("#result").hide();
+                $("#result").show("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>Press the Konami Code!</div>
+    <div>Up, Up, Down, Down, Left, Right, Left, Right, B, A</div>
+    <div id="result" style="display:none;">You have pressed the Konami Code!</div>
+</body>
+</html>
